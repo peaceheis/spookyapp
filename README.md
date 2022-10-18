@@ -48,8 +48,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 These instructions come from: https://cloud.google.com/functions/docs/writing.
 
 1. Open a command line session.
-2. Check that `python` installed correctly: `python -V`. Check that `pip3` installed correctly: `pip3 -V`.
-3. We need to set up our directory structure. 
+2. Type `pip install functions-framework`.
+3. Check that `python` installed correctly: `python -V`. Check that `pip3` installed correctly: `pip3 -V`.
+4. We need to set up our directory structure. 
    - From the project root, enter `mkdir functions` in the command line. 
    - `cd functions`
    - `mkdir my-spooky-function`
@@ -57,9 +58,9 @@ These instructions come from: https://cloud.google.com/functions/docs/writing.
    - `touch main.py`
    - `touch requirements.txt`
    - Type `ls` to check that your files are there and `pwd` to make sure your path is correct.
-4. Open `requirements.txt` in the Text Editor of your choice (this could be VS Code) and add the following:
+5. Open `requirements.txt` in the Text Editor of your choice (this could be VS Code) and add the following:
   `functions-framework==3.*`
-5. Open `main.py` and add the following:
+6. Open `main.py` and add the following:
 ```
 import functions_framework
 
@@ -71,9 +72,9 @@ def my_http_function(request):
   # Return an HTTP response
   return 'Your local function works!'
 ```
-6. Deploy your function locally using the following: `functions-framework --target=my_http_function --port 8000`
-7. Check that your function worked by going to the following link in your browser: [http://localhost:8000/](http://localhost:8000/)
-8. Type Control+C in Terminal to kill the process running your local function.
+7. Deploy your function locally using the following: `functions-framework --target=my_http_function --port 8000`
+8. Check that your function worked by going to the following link in your browser: [http://localhost:8000/](http://localhost:8000/)
+9. Type Control+C in Terminal to kill the process running your local function.
 
 ## HTTP endpoints with an Angular service
 
