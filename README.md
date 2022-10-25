@@ -76,5 +76,21 @@ def my_http_function(request):
 8. Check that your function worked by going to the following link in your browser: [http://localhost:8000/](http://localhost:8000/)
 9. Type Control+C in Terminal to kill the process running your local function.
 
-## HTTP endpoints with an Angular service
+## Components basics
+1. Let's start by adding [Angular Material](https://material.angular.io/guide/getting-started), so our app looks a little nicer. 
+2. Install the Angular Material package by running the following from the root of your project in command line: `ng add @angular/material`.
+- `Would you like to proceed? Yes`
+- `Choose a prebuilt theme name, or "custom" for a cusome theme: [Use arrow keys to select color]`
+- `Set up global Angular Material typography styles? (y/N): y`
+- `Set up browser animations for Angular Material? (Y/n): Y`
+3. Run `npm install`.
+4. Let's create a new component `ng generate component spooky-component`.
+5. Let's see that it works by running `ng serve`. Our material stylings should be applied (e.g., the font should be different).
+6. Replace the code in the component with the dog example code for HTML and CSS: [https://material.angular.io/components/card/examples](https://material.angular.io/components/card/examples).
+7. We'll modify the rest together.
+
+Optional extensions:
+- Change the profile picture in the upper left hand corner of the card. 
+- Write a cloud function locally to pull the card information from Python. Send your code to Clare to create the function for you to call.
+- Add more spooky creatures.
 
