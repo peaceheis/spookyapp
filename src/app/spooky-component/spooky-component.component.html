@@ -1,0 +1,23 @@
+<div class="container">
+   <a class="left-arrow" (click)="moveLeft()" style="flex: 1">
+     <span class="material-icons icon">arrow_left</span>
+   </a>
+   <div style="flex: 2;">
+     <mat-card >
+       <mat-card-header>
+         <div mat-card-avatar class="example-header-image"></div>
+         <mat-card-title>{{creatures[this.curValue].title}}</mat-card-title>
+         <mat-card-subtitle>{{creatures[this.curValue].subtitle}}</mat-card-subtitle>
+       </mat-card-header>
+       <img mat-card-image src="{{creatures[this.curValue].image_link}}" alt="Photo of a spooky creature">
+       <mat-card-content>
+         <p>
+           {{creatures[this.curValue].description}}
+         </p>
+       </mat-card-content>
+     </mat-card>
+   </div>
+   <a class="right-arrow" (click)="moveRight()"  style="flex: 1">
+     <span class="material-icons icon">arrow_right</span>
+   </a>
+ </div>

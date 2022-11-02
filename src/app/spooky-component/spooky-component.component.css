@@ -1,0 +1,47 @@
+* {
+  background-color: black;
+}
+
+.container{
+   display: flex;
+   padding:50px;
+ }
+
+ .example-header-image {
+   background-image: url('https://firstabilenefcu.org/wp-content/uploads/2017/10/Halloween-Pumpkin-PNG-Free-Download.png');
+   background-size: cover;
+ }
+
+ .left-arrow {
+   float: left;
+   cursor: pointer;
+   color: beige;
+   transition: 2s;
+ }
+
+ .left-arrow:hover {
+   float: right;
+   color: saddlebrown;
+   transition: 2s;
+ }
+
+ .right-arrow {
+   color: white;
+   float: right;
+   cursor: pointer;
+   transition: 2s;
+ }
+
+ .right-arrow:hover {
+   float: right;
+   color: saddlebrown;
+   transition: 2s;
+ }
+
+
+ .icon {
+   font-size: 100px;
+   margin: 0;
+   position: relative;
+   top: 45%;
+ }
